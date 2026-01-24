@@ -1,3 +1,132 @@
+/* Remove blue outline and set label/info text to white in dark mode */
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    outline: none !important;
+    box-shadow: none !important;
+}
+body.dark-mode .contact-form input:focus,
+body.dark-mode .contact-form textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #fff !important;
+    border-color: #fff !important;
+}
+body.dark-mode .contact-form label {
+    color: #fff !important;
+}
+body.dark-mode .about-info,
+body.dark-mode .info-item h4,
+body.dark-mode .info-item p,
+body.dark-mode .info-item i {
+    color: #fff !important;
+}
+/* About info card text in dark mode */
+body.dark-mode .about-info,
+body.dark-mode .info-item {
+    background: #23272a !important;
+    color: #eaeaea !important;
+    border-color: #333 !important;
+}
+body.dark-mode .info-item h4,
+body.dark-mode .info-item i {
+    color: #7ecbff !important;
+}
+body.dark-mode .info-item p {
+    color: #b3cfff !important;
+}
+/* Contact form in dark mode */
+body.dark-mode .contact-form {
+    background: #23272a !important;
+    color: #eaeaea !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+}
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background: #181a1b !important;
+    color: #eaeaea !important;
+    border: 1px solid #333 !important;
+}
+body.dark-mode .contact-form label {
+    color: #7ecbff !important;
+}
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+    color: #b3cfff !important;
+    opacity: 1;
+}
+body.dark-mode {
+    background: #181a1b !important;
+    color: #eaeaea !important;
+}
+body.dark-mode .navbar,
+body.dark-mode .about,
+body.dark-mode .projects,
+body.dark-mode .contact,
+body.dark-mode .skills,
+body.dark-mode .education,
+body.dark-mode .footer {
+    background: #23272a !important;
+    color: #eaeaea !important;
+}
+body.dark-mode .timeline-content,
+body.dark-mode .about-info,
+body.dark-mode .skill-category,
+body.dark-mode .project-card,
+body.dark-mode .contact-card,
+body.dark-mode .info-item {
+    background: #23272a !important;
+    color: #eaeaea !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+}
+body.dark-mode .btn,
+body.dark-mode .btn-primary,
+body.dark-mode .btn-secondary {
+    background: #005fcc !important;
+    color: #fff !important;
+}
+body.dark-mode .btn:hover,
+body.dark-mode .btn-primary:hover,
+body.dark-mode .btn-secondary:hover {
+    background: #0078ff !important;
+}
+body.dark-mode .timeline-date {
+    background: #333 !important;
+    color: #fff !important;
+}
+body.dark-mode .timeline-institution {
+    color: #7ecbff !important;
+}
+body.dark-mode .nav-link,
+body.dark-mode .logo {
+    color: #eaeaea !important;
+    -webkit-text-fill-color: #eaeaea !important;
+}
+body.dark-mode .nav-link.active::after,
+body.dark-mode .nav-link:hover::after {
+    background: #7ecbff !important;
+}
+body.dark-mode .info-item h4,
+body.dark-mode .hero-greeting,
+body.dark-mode .hero-subtitle,
+body.dark-mode .section-title,
+body.dark-mode .project-tags span {
+    color: #7ecbff !important;
+}
+body.dark-mode .about-text p,
+body.dark-mode .timeline-content p,
+body.dark-mode .timeline-content h3,
+body.dark-mode .project-info p,
+body.dark-mode .contact-intro,
+body.dark-mode .footer-content p {
+    color: #eaeaea !important;
+}
+body.dark-mode .social-links a {
+    background: #23272a !important;
+    color: #7ecbff !important;
+}
+body.dark-mode .social-links a:hover {
+    background: #7ecbff !important;
+    color: #23272a !important;
+}
 /* ===========================
    CSS Reset & Base Styles
    =========================== */
@@ -241,6 +370,10 @@ a {
     padding: var(--spacing-xl) var(--spacing-md);
     position: relative;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: background 0.3s;
+}
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #23272a 0%, #181a1b 100%) !important;
 }
 
 .hero-container {

@@ -525,6 +525,20 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+        <button id="darkModeToggle" aria-label="Toggle dark mode" style="position:fixed;bottom:2rem;right:2rem;z-index:9999;background:#fff;color:#222;border:none;border-radius:50%;width:48px;height:48px;font-size:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);cursor:pointer;">🌙</button>
+        <script src="script.js"></script>
+        <script>
+        // Dark mode toggle logic
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        function setDarkMode(on) {
+            document.body.classList.toggle('dark-mode', on);
+            localStorage.setItem('darkMode', on ? '1' : '0');
+            darkModeToggle.textContent = on ? '☀️' : '🌙';
+        }
+        darkModeToggle.addEventListener('click', () => {
+            setDarkMode(!document.body.classList.contains('dark-mode'));
+        });
+        if (localStorage.getItem('darkMode') === '1') setDarkMode(true);
+        </script>
 </body>
 </html>
