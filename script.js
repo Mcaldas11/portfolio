@@ -2,6 +2,28 @@
 // Smooth Scrolling & Navigation
 // ===========================
 document.addEventListener('DOMContentLoaded', function() {
+        // ===========================
+        // Skills Filter Functionality
+        // ===========================
+        const filterButtons = document.querySelectorAll('.skill-filter-btn');
+        const skillItems = document.querySelectorAll('.skill-modern-item');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                filterButtons.forEach(b => b.classList.remove('btn-primary'));
+                filterButtons.forEach(b => b.classList.add('btn-secondary'));
+                this.classList.remove('btn-secondary');
+                this.classList.add('btn-primary');
+                skillItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
     
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
