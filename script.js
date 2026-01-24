@@ -2,6 +2,28 @@
 // Smooth Scrolling & Navigation
 // ===========================
 document.addEventListener('DOMContentLoaded', function() {
+                // ===========================
+                // Back to Top Button
+                // ===========================
+                const backToTopBtn = document.getElementById('back-to-top');
+                if (backToTopBtn) {
+                    backToTopBtn.addEventListener('click', function() {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                    // Show/hide based on scroll past hero section
+                    const heroSection = document.getElementById('home');
+                    function toggleBackToTop() {
+                        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+                        if (window.scrollY > heroBottom) {
+                            backToTopBtn.parentElement.classList.add('visible');
+                        } else {
+                            backToTopBtn.parentElement.classList.remove('visible');
+                        }
+                    }
+                    // Initial state
+                    toggleBackToTop();
+                    window.addEventListener('scroll', toggleBackToTop);
+                }
         // ===========================
         // Skills Filter Functionality
         // ===========================
@@ -355,7 +377,7 @@ document.addEventListener('DOMContentLoaded', function() {
     backToTopButton.style.cssText = `
         position: fixed;
         bottom: 30px;
-        right: 30px;
+        left: 30px;
         width: 50px;
         height: 50px;
         border-radius: 50%;
