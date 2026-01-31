@@ -1,11 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Miguel Caldas - FrontEnd Developer & UI/UX Designer" />
+    <meta name="author" content="Miguel Caldas" />
+    <title>About Me - Miguel Caldas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aboutMe.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">MC</div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link active">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about-hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I am</p>
+          <h1 class="hero-title">Miguel Caldas</h1>
+          <h2 class="hero-subtitle">FrontEnd Developer & UI/UX Designer</h2>
+          <p class="hero-description">
+            I'm a 19-year-old student passionate about building beautiful, functional, and user-centered digital experiences. I love learning new technologies and design trends, always aiming to create interfaces that are both intuitive and impactful.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/miguel-caldas-7275a8212/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Mcaldas11" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/miguelcaldas.9/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://avatars.githubusercontent.com/u/104885982?v=4" alt="Miguel Caldas" style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(0,0,0,0.15);" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              My name is Miguel Caldas, I am 19 years old and currently studying Technologies and Information Systems for the Web. I chose this degree because I love both the IT and creative aspects it offers—through it, I can express my creativity and transform ideas into real projects. My journey in design and development began with a curiosity to understand how to create digital experiences that truly matter to people.
+            </p>
+            <p>
+              I am always eager to learn new technologies and methodologies, focusing on building interfaces that are not only beautiful, but also functional, accessible, and user-centered. I believe that good design is invisible and the best technology is the one that solves real problems.
+            </p>
+            <p>
+              Besides IT and design, I am passionate about sports. I have played volleyball since I was 3 years old, starting on the beach with my father as my first coach. At the age of 5 or 6, I joined a club, and to this day, I still represent it. When I am not coding or prototyping, I enjoy playing volleyball, video games, and spending time with friends.
+            </p>
+          </div>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-user"></i>
+              <div>
+                <h4>Name</h4>
+                <p>Miguel Caldas</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-calendar"></i>
+              <div>
+                <h4>Age</h4>
+                <p>19 years</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>FrontEnd & UI/UX Design</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-modern-grid">
+          <div class="skill-modern-item" title="HTML5"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="skill-modern-item" title="CSS3 / SASS"><i class="fab fa-css3-alt"></i><span>CSS3 / SASS</span></div>
+          <div class="skill-modern-item" title="JavaScript"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-modern-item" title="React"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="skill-modern-item" title="Figma"><i class="fab fa-figma"></i><span>Figma</span></div>
+          <div class="skill-modern-item" title="SQL"><i class="fas fa-database"></i><span>SQL</span></div>
+          <div class="skill-modern-item" title="MongoDB"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+          <div class="skill-modern-item" title="Git & GitHub"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+          <div class="skill-modern-item" title="Adobe Photoshop"><i class="fas fa-image"></i><span>Adobe Photoshop</span></div>
+          <div class="skill-modern-item" title="Adobe Illustrator"><i class="fas fa-pen-nib"></i><span>Adobe Illustrator</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos" class="photos">
+      <div class="container">
+        <h2 class="section-title">My Photos</h2>
+        <div class="photos-carousel-wrapper">
+          <button class="carousel-arrow left" id="carouselPrev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+          <div class="photos-carousel" id="photosCarousel">
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Photo 1"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Photo 2"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Photo 3"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1465101178521-cb6eadeb5fe9?auto=format&fit=crop&w=400&q=80" alt="Photo 4"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Photo 5"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Photo 6"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Photo 7"></div>
+          </div>
+          <button class="carousel-arrow right" id="carouselNext" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="mailto:miguelmeniciocaldas@gmail.com">miguelmeniciocaldas@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h3>Telefone</h3>
+            <a href="tel:+351961057211">+351 961 057 211</a>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/miguel-caldas-7275a8212/" target="_blank">Miguel Caldas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/miguel-caldas-7275a8212/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Mcaldas11" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/miguelcaldas.9/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p>&copy; 2026 Miguel Caldas. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Simple photo carousel logic
+      const carousel = document.getElementById('photosCarousel');
+      const prevBtn = document.getElementById('carouselPrev');
+      const nextBtn = document.getElementById('carouselNext');
+      let currentIndex = 0;
+      const items = carousel ? Array.from(carousel.children) : [];
+      const visibleCount = window.innerWidth < 700 ? 1 : 3;
+
+      function fadeOutIn(callback) {
+        const visible = items.filter((item, idx) => idx >= currentIndex && idx < currentIndex + visibleCount);
+        visible.forEach(item => {
+          item.classList.add('fade-out');
+        });
+        setTimeout(() => {
+          visible.forEach(item => {
+            item.classList.remove('fade-out');
+          });
+          callback();
+          const newVisible = items.filter((item, idx) => idx >= currentIndex && idx < currentIndex + visibleCount);
+          newVisible.forEach(item => {
+            item.classList.add('fade-in');
+            setTimeout(() => item.classList.remove('fade-in'), 400);
+          });
+        }, 400);
+      }
+
+      function updateCarousel() {
+        items.forEach((item, idx) => {
+          item.style.display = (idx >= currentIndex && idx < currentIndex + visibleCount) ? 'flex' : 'none';
+        });
+      }
+
+      function showPrev() {
+        if (currentIndex > 0) {
+          fadeOutIn(() => {
+            currentIndex--;
+            updateCarousel();
+          });
+        }
+      }
+      function showNext() {
+        if (currentIndex < items.length - visibleCount) {
+          fadeOutIn(() => {
+            currentIndex++;
+            updateCarousel();
+          });
+        }
+      }
+
+      if (carousel && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+        window.addEventListener('resize', () => {
+          updateCarousel();
+        });
+        updateCarousel();
+      }
+    </script>
+  </body>
 </html>
